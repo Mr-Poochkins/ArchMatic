@@ -86,7 +86,7 @@ cat <<EOF > /mnt/boot/loader/entries/arch.conf
 title Arch Linux  
 linux /vmlinuz-linux  
 initrd  /initramfs-linux.img  
-options root=${DISK}2 rw rootflags=subvol=@
+options root=ROOT rw rootflags=subvol=@
 EOF
 cp -R ~/ArchMatic /mnt/root/
 echo "--------------------------------------"
